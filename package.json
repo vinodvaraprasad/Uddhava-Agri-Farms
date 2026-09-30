@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "build:preview": "vite build --mode preview",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "media:upload": "node scripts/upload-media.mjs"
   },
   "dependencies": {
     "jszip": "3.10.1",
@@ -16,6 +17,7 @@
     "react-router-dom": "6.26.2"
   },
   "devDependencies": {
+    "@vercel/blob": "2.8.0",
     "@vitejs/plugin-react": "4.3.1",
     "vite": "5.4.8",
     "vite-plugin-singlefile": "2.0.2"

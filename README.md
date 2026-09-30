@@ -8,6 +8,7 @@ npm install
 npm run dev             # local development
 npm run build           # production build → dist/ (normal URLs, no prototype tools)
 npm run build:preview   # single-file preview → dist-preview/index.html (hash URLs, prototype tools on)
+npm run media:upload -- <zip or folder>   # upload images/videos to Vercel Blob (see DEPLOYMENT.md)
 ```
 
 ## Hosting (production)
@@ -25,11 +26,12 @@ src/
   pages/        Home, Breeds, BreedDetail, Birds (all/roosters/hens), BirdDetail, OurFarm,
                 About, Gallery, Contact, Faq, Privacy, NotFound
   data/         site.js (confirmed facts), inventory.js (DEMO birds), varieties.js (DEMO),
-                appearances.js, gallery.js, faq.js, nav.js, media.js (image slots + prompts)
+                appearances.js, gallery.js, faq.js, nav.js, media.js (image slots + prompts),
+                media-urls.json (Vercel Blob URLs per slot, written by media:upload)
   i18n/         I18nProvider.jsx, locales/en.json, locales/te.json
   lib/          whatsapp.js, hooks.js, mediaStore.jsx (preview-only media tools)
   styles/       global.css (design tokens)
-public/media/   permanent home for approved images (paths listed in data/media.js)
+scripts/        upload-media.mjs (uploads media to Vercel Blob, updates data/media-urls.json)
 ```
 
 ## Content rules built into the data

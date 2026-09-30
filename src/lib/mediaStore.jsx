@@ -1,12 +1,23 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
 import JSZip from 'jszip';
 import { MEDIA, MEDIA_IDS, STYLE, VIDEO_NOTE } from '../data/media.js';
+import MEDIA_URLS from '../data/media-urls.json';
 import { useI18n } from '../i18n/I18nProvider.jsx';
 import styles from './mediaStore.module.css';
 
 // Prototype-only tooling (placing concept images, prompts, export) is compiled in
-// only for the preview build. The production build serves files from public/media.
+// only for the preview build.
 export const PROTOTYPE = import.meta.env.VITE_PROTOTYPE_TOOLS === 'true';
+
+// Published media hosted on Vercel Blob: slot id -> { imgUrl, vidUrl }.
+// data/media-urls.json is written by `npm run media:upload`; do not edit it by hand.
+// Every build (production and preview) starts from these; in the preview, images
+// placed with the prototype tools override them slot by slot.
+const PUBLISHED = Object.fromEntries(
+  Object.entries(MEDIA_URLS)
+    .filter(([id, u]) => MEDIA[id] && u && (u.img || u.vid))
+    .map(([id, u]) => [id, { imgUrl: u.img || null, vidUrl: u.vid || null }])
+);
 
 const DB = 'uaf-prototype';       // same store as prototypes v2/v3, so placed images carry over
 const Ctx = createContext(null);
@@ -53,7 +64,7 @@ export const fullPrompt = (id) => {
 
 export function MediaProvider({ children }) {
   const { t } = useI18n();
-  const [items, setItems] = useState({});           // id -> { img, vid, imgUrl, vidUrl }
+  const [items, setItems] = useState(PUBLISHED);    // id -> { img, vid, imgUrl, vidUrl }
   const [edit, setEdit] = useState(false);
   const [logo, setLogoState] = useState(() => { try { return localStorage.getItem('uaf-logo') || 'a'; } catch { return 'a'; } });
   const [promptId, setPromptId] = useState(null);
@@ -74,7 +85,7 @@ export function MediaProvider({ children }) {
     setItems((prev) => {
       const cur = { ...(prev[id] || {}) };
       const urlKey = which === 'vid' ? 'vidUrl' : 'imgUrl';
-      if (cur[urlKey]) URL.revokeObjectURL(cur[urlKey]);
+      if (cur[urlKey] && cur[urlKey].startsWith('blob:')) URL.revokeObjectURL(cur[urlKey]);
       cur[which] = blob || null;
       cur[urlKey] = blob ? URL.createObjectURL(blob) : null;
       return { ...prev, [id]: cur };
@@ -169,7 +180,7 @@ export function MediaProvider({ children }) {
               <div className={styles.dialog} role="dialog" aria-modal="true" aria-labelledby="uaf-prompt-title">
                 <h2 id="uaf-prompt-title" className={styles.title}>{MEDIA[promptId].title}</h2>
                 <p className={styles.meta}>{MEDIA[promptId].ratio}</p>
-                <code className={styles.file}>{t('proto.file')}: public/media/{MEDIA[promptId].file}</code>
+                <code className={styles.file}>{t('proto.file')}: media/{MEDIA[promptId].file}</code>
                 <div id="uaf-prompt-text" className={styles.prompt}>{fullPrompt(promptId)}</div>
                 <div className={styles.actions}>
                   <button type="button" className={styles.btn} onClick={() => setPromptId(null)}>{t('a11y.close')}</button>
