@@ -1,1 +1,85 @@
-{}
+{
+  "hero": {
+    "file": "brand/home/hero-rooster-red-brown-profile.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/home/hero-rooster-red-brown-profile-14fc696423.webp"
+  },
+  "heroActivity": {
+    "file": "brand/home/hero-activity-hen-walking.mp4",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/home/hero-activity-hen-walking-69995b57b6.webp"
+  },
+  "catRooster": {
+    "file": "brand/birds/category-roosters-black.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/birds/category-roosters-black-bf152773c7.webp"
+  },
+  "catHen": {
+    "file": "brand/birds/category-hens-portrait.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/birds/category-hens-portrait-6265c40091.webp"
+  },
+  "varAseel": {
+    "file": "brand/varieties/demo-aseel.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/varieties/demo-aseel-4cdc94119b.webp"
+  },
+  "varKadaknath": {
+    "file": "brand/varieties/demo-kadaknath.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/varieties/demo-kadaknath-90d4080632.webp"
+  },
+  "varCountry": {
+    "file": "brand/varieties/demo-native-country-chicken.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/varieties/demo-native-country-chicken-4c774bb516.webp"
+  },
+  "varRegional1": {
+    "file": "brand/varieties/demo-regional-1.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/varieties/demo-regional-1-875a09a8e2.webp"
+  },
+  "farmWide": {
+    "file": "brand/farm/farm-wide-morning.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/farm/farm-wide-morning-47e0f9863b.webp"
+  },
+  "farmMorning": {
+    "file": "brand/farm/farm-shelter-sunrise.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/farm/farm-shelter-sunrise-85ba4b1853.webp"
+  },
+  "farmHands": {
+    "file": "brand/farm/farm-hands-feeding.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/farm/farm-hands-feeding-cf958a0e47.webp"
+  },
+  "landscapeVideo": {
+    "file": "brand/gallery/video-farm-sunrise.mp4",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/video-farm-sunrise-e833b8c20b.webp",
+    "vid": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/video-farm-sunrise-5c760181bd.mp4"
+  },
+  "reelVideo1": {
+    "file": "brand/gallery/reel-hens-water-pot.mp4",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/reel-hens-water-pot-3516a8c792.webp",
+    "vid": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/reel-hens-water-pot-6839ddd3af.mp4"
+  },
+  "reelVideo2": {
+    "file": "brand/gallery/reel-rooster-dawn.mp4",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/reel-rooster-dawn-14e41bd3df.webp",
+    "vid": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/reel-rooster-dawn-34b5c0eee7.mp4"
+  },
+  "galleryForage": {
+    "file": "brand/gallery/photo-hens-foraging.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/photo-hens-foraging-e9478e3baa.webp"
+  },
+  "galleryFeed": {
+    "file": "brand/gallery/photo-morning-feed.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/photo-morning-feed-a88ce772ae.webp"
+  },
+  "galleryPath": {
+    "file": "brand/gallery/photo-farm-path.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/photo-farm-path-a1c1c1816b.webp"
+  },
+  "galleryEvening": {
+    "file": "brand/gallery/photo-evening-shelter.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/gallery/photo-evening-shelter-aef8fca178.webp"
+  },
+  "bizFlock": {
+    "file": "brand/business/flock-scale.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/business/flock-scale-5347c56efb.webp"
+  },
+  "closePortrait": {
+    "file": "brand/home/closing-hen-blue-grey.jpg",
+    "img": "https://rjgvkidilaojclpc.public.blob.vercel-storage.com/media/brand/home/closing-hen-blue-grey-3474f88194.webp"
+  }
+}
