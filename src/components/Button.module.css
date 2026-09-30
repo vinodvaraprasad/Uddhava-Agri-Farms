@@ -1,0 +1,21 @@
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:var(--r-md);font:600 15px/1.2 var(--font-body);text-decoration:none;cursor:pointer;border:1.5px solid transparent;white-space:nowrap;overflow:hidden;isolation:isolate;transition:color .2s,border-color .2s,transform .15s var(--ease),box-shadow .3s}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease-out)}
+.btn:hover::before{transform:scaleX(1)}
+.btn:active{transform:scale(.975)}
+.icon{width:20px;height:20px;flex:none;transition:transform .4s var(--ease-out)}
+.arrow{width:18px;height:18px;flex:none;transition:transform .35s var(--ease-out)}
+.btn:hover .arrow{transform:translateX(4px)}
+.label{display:inline-block}
+.primary{background:var(--sage);color:var(--ivory)}
+.primary::before{background:var(--forest)}
+.primary:hover{box-shadow:0 8px 20px rgba(62,84,71,.22)}
+.primary:hover .icon{transform:rotate(-10deg) scale(1.1)}
+.secondary{border-color:var(--forest);color:var(--forest);background:transparent}
+.secondary::before{background:var(--sand)}
+.light{border-color:rgba(247,245,239,.6);color:var(--ivory);background:transparent}
+.light::before{background:rgba(247,245,239,.14)}
+.ivory{background:var(--ivory);color:var(--forest)}
+.ivory::before{background:#fff}
+.sm{min-height:42px;padding:0 16px;font-size:14px}
+.full{width:100%}
+:global(:root[lang="te"]) .btn{font-size:14.5px}

@@ -1,0 +1,84 @@
+/* Design tokens: the approved Uddhava Agri Farms system. No gold. */
+:root{
+  --sage:#506B5B; --forest:#3E5447; --ivory:#F7F5EF; --sand:#E8E2D6;
+  --charcoal:#2F352F; --muted:#6F786F; --text2:#5E665E; --line:#D8DDD6; --clay:#8A6A55;
+  --clay-tint:#EFE3D9; --sage-tint:#DCE4DD; --sand-deep:#DDD5C6;
+  --font-head:"Lora", Georgia, "Times New Roman", serif;
+  --font-body:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --r-sm:6px; --r-md:8px; --r-lg:12px; --r-xl:20px;
+  --sh-sm:0 1px 2px rgba(47,53,47,.06); --sh-md:0 8px 24px rgba(47,53,47,.08); --sh-lg:0 18px 44px rgba(47,53,47,.14);
+  --ease:cubic-bezier(.2,.7,.2,1); --ease-out:cubic-bezier(.16,1,.3,1);
+  --header-h:64px;
+  --gutter:20px;
+  box-sizing:border-box;
+}
+/* Telugu: Lora and Inter have no Telugu glyphs, so both families switch */
+:root[lang="te"]{
+  --font-head:"Noto Serif Telugu", "Lora", Georgia, serif;
+  --font-body:"Noto Sans Telugu", "Inter", system-ui, sans-serif;
+}
+@media (min-width:640px){:root{--gutter:32px}}
+@media (min-width:1024px){:root{--gutter:48px;--header-h:80px}}
+
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(var(--header-h) + 16px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--charcoal);font:400 16px/1.65 var(--font-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[lang="te"] body{line-height:1.8}
+body.scroll-locked{overflow:hidden}
+img,svg,video{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:4px}
+.visually-hidden{position:absolute !important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:var(--forest);color:var(--ivory);padding:10px 14px;border-radius:var(--r-md);text-decoration:none}
+.skip-link:focus{top:12px}
+
+/* Layout */
+.container{width:100%;max-width:calc(1240px + 2 * var(--gutter));margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:64px}
+.section-sand{background:var(--sand)}
+@media (min-width:768px){.section{padding-block:88px}}
+@media (min-width:1024px){.section{padding-block:108px}}
+
+/* Type */
+.h1,.h2,.h3{font-family:var(--font-head);font-weight:600;color:var(--forest);margin:0;text-wrap:balance}
+.h1{font-size:clamp(2.2rem,1.5rem + 3vw,4rem);line-height:1.08;letter-spacing:-.015em}
+.h2{font-size:clamp(1.8rem,1.35rem + 1.9vw,2.7rem);line-height:1.15;letter-spacing:-.005em}
+.h3{font-size:clamp(1.2rem,1.1rem + .4vw,1.45rem);line-height:1.25}
+:root[lang="te"] .h1,:root[lang="te"] .h2,:root[lang="te"] .h3{letter-spacing:0;line-height:1.35}
+.lede{color:var(--text2);font-size:1.0625rem;max-width:56ch;margin:12px 0 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--text2);font-size:14px;margin:0 0 14px}
+.eyebrow svg{width:18px;height:18px;color:var(--clay)}
+
+/* Small shared atoms */
+.demo-tag{display:inline-flex;align-items:center;gap:6px;background:var(--clay-tint);color:#6E5241;font-size:12px;font-weight:700;letter-spacing:.04em;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.demo-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--clay)}
+:root[lang="te"] .demo-tag{letter-spacing:0}
+.pending-tag{display:inline-flex;align-items:center;gap:6px;background:#E3E7E0;color:var(--charcoal);font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.link{display:inline-flex;align-items:center;gap:8px;color:var(--sage);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;background:none;border:0;padding:0;cursor:pointer}
+.link:hover{color:var(--forest)}
+.link svg{width:16px;height:16px;transition:transform .3s var(--ease-out)}
+.link:hover svg{transform:translateX(3px)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--muted);background:transparent;cursor:pointer;font-size:14px;font-weight:500;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:var(--forest)}
+.chip[aria-pressed="true"]{background:var(--forest);border-color:var(--forest);color:var(--ivory)}
+.row-head{display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
+@media (min-width:768px){.row-head{flex-direction:row;justify-content:space-between;align-items:flex-end}}
+.row-head .title-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+
+@media (max-width:1023px){body.has-sticky-bar footer{padding-bottom:100px}}
+
+/* Scroll-driven entrances (see Reveal.jsx). Content is visible without JS. */
+.js [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease-out);transition-delay:calc(var(--d,0) * 90ms)}
+.js [data-reveal="fade"]{transform:none}
+.js [data-reveal="left"]{transform:translateX(-28px)}
+.js [data-reveal="scale"]{transform:scale(.96)}
+.js [data-reveal="clip"]{transform:none;clip-path:inset(14% 0 0 0 round var(--r-xl));opacity:.001;transition:clip-path 1.15s var(--ease-out),opacity .5s}
+.js [data-reveal].in{opacity:1;transform:none}
+.js [data-reveal="clip"].in{clip-path:inset(0 0 0 0 round var(--r-xl))}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  .js [data-reveal]{opacity:1 !important;transform:none !important;clip-path:none !important}
+}

@@ -1,0 +1,122 @@
+.header{position:sticky;top:0;z-index:50;background:rgba(247,245,239,.82);-webkit-backdrop-filter:saturate(1.3) blur(10px);backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid transparent;transition:background .3s,border-color .3s,box-shadow .3s}
+.scrolled{background:rgba(247,245,239,.96);border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(47,53,47,.06)}
+.bar{height:var(--header-h);display:flex;align-items:center;gap:16px}
+
+/* Brand */
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--forest);flex:none;--accent:var(--forest);--knock:var(--ivory)}
+.mark{width:42px;height:42px;transition:transform .5s var(--ease-out)}
+.brand:hover .mark{transform:rotate(-4deg) scale(1.04)}
+.wordmark{display:flex;flex-direction:column;line-height:1}
+.name{font:600 18px/1 "Lora",Georgia,serif;letter-spacing:.15em}
+.sub{font:500 8.5px/1 "Inter",system-ui,sans-serif;letter-spacing:.42em;margin-top:6px;color:var(--sage)}
+
+/* Desktop navigation */
+.nav{display:none;flex:1;justify-content:center;min-width:0}
+.list{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.item{position:relative}
+.link{position:relative;display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 12px;border:0;background:none;cursor:pointer;text-decoration:none;font:500 15px/1 var(--font-body);color:var(--charcoal);white-space:nowrap;border-radius:var(--r-md);transition:color .2s,background .2s}
+.link::after{content:"";position:absolute;left:12px;right:12px;bottom:6px;height:2px;border-radius:2px;background:var(--sage);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease-out)}
+.link:hover{color:var(--forest);background:rgba(80,107,91,.07)}
+.link:hover::after{transform:scaleX(.35)}
+.active{color:var(--forest);font-weight:600}
+.active::after,.active:hover::after{transform:scaleX(1)}
+.chev{width:14px;height:14px;transition:transform .3s var(--ease-out)}
+.chevOpen{transform:rotate(180deg)}
+
+/* Explore Birds dropdown */
+.dropdown{position:absolute;top:calc(100% + 10px);left:50%;width:360px;transform:translate(-50%,8px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s var(--ease),transform .35s var(--ease-out),visibility 0s .35s;z-index:60}
+.dropdown::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
+.open{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);transition:opacity .25s var(--ease),transform .35s var(--ease-out),visibility 0s}
+.dropList{list-style:none;margin:0;padding:8px;background:var(--ivory);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-lg);display:grid;gap:2px}
+.dropItem{display:grid;grid-template-columns:52px 1fr 18px;gap:14px;align-items:center;padding:8px;border-radius:var(--r-md);text-decoration:none;color:var(--charcoal);transition:background .2s}
+.dropItem:hover,.dropItem:focus-visible{background:var(--sand)}
+.dropThumb{width:52px;height:52px;border-radius:var(--r-md)}
+.dropThumb span:last-child{display:none}
+.dropTitle{display:block;font-weight:600;font-size:15px;color:var(--forest)}
+.dropDesc{display:block;font-size:13px;color:var(--text2)}
+.dropArrow{width:16px;height:16px;color:var(--sage);opacity:0;transform:translateX(-4px);transition:opacity .2s,transform .3s var(--ease-out)}
+.dropItem:hover .dropArrow{opacity:1;transform:none}
+.dropActive .dropTitle{text-decoration:underline;text-underline-offset:4px}
+
+/* Tablet quick links */
+.quick{display:none;align-items:center;gap:2px;margin-left:8px}
+
+/* Right-side actions */
+.actions{display:flex;align-items:center;gap:8px;margin-left:auto;flex:none}
+.lang{position:relative;display:none}
+.langBtn{display:inline-flex;align-items:center;gap:6px;height:42px;padding:0 10px;border:1px solid transparent;border-radius:var(--r-md);background:transparent;cursor:pointer;font-weight:600;font-size:14px;color:var(--charcoal);transition:border-color .2s,background .2s}
+.langBtn:hover{border-color:var(--line);background:rgba(80,107,91,.05)}
+.globe{width:18px;height:18px}
+.langShort{min-width:1.4em;text-align:left}
+.langMenu{position:absolute;right:0;top:calc(100% + 8px);min-width:190px;padding:6px;background:var(--ivory);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-md);opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .2s,transform .3s var(--ease-out),visibility 0s .3s;z-index:60}
+.langMenu.open{opacity:1;visibility:visible;transform:none;transition:opacity .2s,transform .3s var(--ease-out),visibility 0s}
+.langOpt{display:flex;align-items:center;justify-content:space-between;width:100%;height:42px;padding:0 12px;border:0;border-radius:var(--r-md);background:transparent;cursor:pointer;font-size:15px;text-align:left}
+.langOpt:hover{background:var(--sand)}
+.langOpt[aria-checked="true"]{font-weight:600;color:var(--forest)}
+.langOpt:lang(te){font-family:"Noto Sans Telugu",sans-serif}
+.tick{width:18px;height:18px;color:var(--sage)}
+.wa{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;width:44px;border-radius:50%;background:var(--sage);color:var(--ivory);text-decoration:none;font-weight:600;font-size:14.5px;white-space:nowrap;overflow:hidden;isolation:isolate;transition:box-shadow .3s,transform .15s}
+.wa::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--forest);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease-out)}
+.wa:hover::before{transform:scaleX(1)}
+.wa:hover{box-shadow:0 8px 20px rgba(62,84,71,.22)}
+.wa:active{transform:scale(.97)}
+.waIcon{width:21px;height:21px;flex:none;transition:transform .4s var(--ease-out)}
+.wa:hover .waIcon{transform:rotate(-10deg) scale(1.08)}
+.waLong,.waShort{display:none}
+.iconBtn{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;border:1.5px solid var(--line);background:transparent;cursor:pointer;color:var(--charcoal);transition:background .2s,border-color .2s}
+.iconBtn:hover{background:var(--sand);border-color:var(--sand-deep)}
+.iconBtn svg{width:22px;height:22px}
+
+/* Drawer (mobile and tablet) */
+.drawerWrap{position:fixed;inset:0;z-index:80;visibility:hidden;transition:visibility 0s .45s}
+.drawerOpen{visibility:visible;transition:visibility 0s}
+.scrim{position:absolute;inset:0;background:rgba(47,53,47,.42);opacity:0;transition:opacity .35s}
+.drawerOpen .scrim{opacity:1}
+.drawer{position:absolute;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--ivory);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .45s var(--ease-out);box-shadow:var(--sh-lg);outline:none;overflow-y:auto;overscroll-behavior:contain}
+.drawerOpen .drawer{transform:none}
+.drawerTop{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);padding:0 var(--gutter);border-bottom:1px solid var(--line);flex:none}
+.drawerNav{padding:8px var(--gutter);display:flex;flex-direction:column}
+.dLink{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:56px;padding:0;border:0;border-bottom:1px solid var(--line);background:none;cursor:pointer;text-decoration:none;text-align:left;font:600 20px/1.3 var(--font-head);color:var(--forest)}
+.dArrow{width:18px;height:18px;color:var(--sage);opacity:.7}
+.dActive{color:var(--sage)}
+.dActive .dArrow{opacity:1}
+.dSub{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s var(--ease-out)}
+.dSub > div{overflow:hidden;display:flex;flex-direction:column}
+.dSubOpen{grid-template-rows:1fr}
+.dSubLink{display:flex;flex-direction:column;gap:2px;padding:12px 0 12px 16px;border-left:2px solid var(--line);margin-left:2px;text-decoration:none;color:var(--charcoal);font-weight:600}
+.dSubLink small{font-weight:400;color:var(--text2);font-size:13px}
+.dSubLink:first-child{margin-top:8px}
+.dSubLink:last-child{margin-bottom:12px}
+.dSubLink.dActive{border-left-color:var(--sage);color:var(--forest)}
+.drawer .chev{width:18px;height:18px}
+.drawerFoot{margin-top:auto;padding:20px var(--gutter) calc(24px + env(safe-area-inset-bottom,0px));display:grid;gap:12px;border-top:1px solid var(--line);background:var(--sand)}
+.dLabel{margin:0;font-size:13px;font-weight:600;color:var(--text2)}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--ivory);border:1px solid var(--line);border-radius:999px;padding:4px}
+.seg button{height:42px;border:0;border-radius:999px;background:transparent;cursor:pointer;font-weight:600;color:var(--text2)}
+.seg button:lang(te){font-family:"Noto Sans Telugu",sans-serif}
+.seg button[aria-checked="true"]{background:var(--forest);color:var(--ivory)}
+.drawerWa{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border-radius:var(--r-md);background:var(--sage);color:var(--ivory);text-decoration:none;font-weight:600}
+.drawerWa svg{width:20px;height:20px}
+
+/* ---------- Breakpoints ---------- */
+@media (min-width:768px){
+  .mark{width:46px;height:46px}
+  .lang{display:block}
+  .wa{width:auto;padding:0 18px;border-radius:var(--r-md)}
+  .waShort{display:inline}
+}
+@media (min-width:900px){ .quick{display:flex} }
+/* Full navigation. Telugu labels are longer, so the switch happens at a wider width. */
+@media (min-width:1180px){
+  :global(:root:not([lang="te"])) .nav{display:flex}
+  :global(:root:not([lang="te"])) .quick,:global(:root:not([lang="te"])) .menuBtn{display:none}
+  .mark{width:50px;height:50px}
+  .name{font-size:19px}
+}
+@media (min-width:1360px){
+  :global(:root[lang="te"]) .nav{display:flex}
+  :global(:root[lang="te"]) .quick,:global(:root[lang="te"]) .menuBtn{display:none}
+  :global(:root:not([lang="te"])) .waShort{display:none}
+  :global(:root:not([lang="te"])) .waLong{display:inline}
+  .list{gap:8px}
+}

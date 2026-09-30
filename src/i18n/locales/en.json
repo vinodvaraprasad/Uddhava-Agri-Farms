@@ -1,0 +1,200 @@
+{
+  "meta": { "siteName": "Uddhava Agri Farms", "tagline": "Rooted in Tradition. Raised with Care.", "langName": "English" },
+  "a11y": {
+    "skip": "Skip to content", "openMenu": "Open menu", "closeMenu": "Close menu", "mainNav": "Main navigation",
+    "language": "Language", "close": "Close", "previous": "Previous", "next": "Next", "breadcrumb": "Breadcrumb",
+    "enquireAbout": "Enquire about {id} on WhatsApp", "openItem": "Open {name}", "home": "Uddhava Agri Farms, home",
+    "filters": "Filters", "gallery": "Media viewer", "moreVarieties": "More varieties", "prevVarieties": "Previous varieties",
+    "toggleSubmenu": "Show Explore Birds pages", "selectPhoto": "Show photo {n}", "selectVideo": "Show video"
+  },
+  "nav": {
+    "home": "Home", "breeds": "Our Breeds", "explore": "Explore Birds", "allBirds": "All available birds", "allBirdsDesc": "Every bird listed for enquiry",
+    "roosters": "Roosters", "roostersDesc": "Kodi Punjulu", "hens": "Hens", "hensDesc": "Kodi Pettalu",
+    "farm": "Our Farm", "gallery": "Gallery", "about": "About", "contact": "Contact", "faq": "FAQ", "privacy": "Privacy policy"
+  },
+  "cta": {
+    "whatsapp": "Enquire on WhatsApp", "whatsappShort": "WhatsApp", "explore": "Explore our birds", "viewDetails": "View details",
+    "contactFarm": "Contact our farm", "business": "Discuss a business enquiry", "backHome": "Back to home", "seeAllBirds": "See all available birds",
+    "allVarieties": "All varieties", "openGallery": "Open the full gallery", "allQuestions": "All questions", "askWhatsapp": "Ask on WhatsApp",
+    "exploreVariety": "Explore variety", "seeBirds": "See birds", "ourFarm": "Our farm", "aboutUs": "About us", "chat": "Chat on WhatsApp"
+  },
+  "common": {
+    "demo": "DEMO", "pending": "Pending", "months": "{n} months", "monthsShort": "{n} mo", "kg": "{n} kg",
+    "available": "Available", "reserved": "Reserved", "rooster": "Rooster", "hen": "Hen", "roosters": "Roosters", "hens": "Hens",
+    "location": "Lingapalem, Andhra Pradesh", "locationShort": "Lingapalem, AP", "notProvided": "Not provided yet", "all": "All",
+    "fromDemo": "From demo listings"
+  },
+  "colour": { "black": "Black", "white": "White", "red": "Red", "brown": "Brown", "speckled": "Speckled", "multicoloured": "Multicoloured" },
+  "variety": {
+    "aseel": { "name": "Aseel", "sub": "Sample variety" },
+    "kadaknath": { "name": "Kadaknath", "sub": "Sample variety" },
+    "native-country-chicken": { "name": "Native country chicken", "sub": "Sample variety" },
+    "regional-variety-1": { "name": "Regional variety 1", "sub": "Name to be confirmed" },
+    "regional-variety-2": { "name": "Regional variety 2", "sub": "Name to be confirmed" },
+    "regional-variety-3": { "name": "Regional variety 3", "sub": "Name to be confirmed" }
+  },
+  "media": {
+    "placeholder": "Placeholder image", "conceptVideo": "Concept video", "videoPlaceholder": "Video placeholder · footage to be added",
+    "realPhoto": "Actual bird image will be added", "realVideo": "Real bird video will be added", "realOnly": "Real media of this bird only",
+    "photoN": "Photo {n}", "video": "Video", "noMediaYet": "Image to be added", "noVideoYet": "Footage to be added"
+  },
+  "wa": {
+    "general": "Hello Uddhava Agri Farms, I would like to know more about your birds.",
+    "business": "Hello Uddhava Agri Farms, I am enquiring for my business.\nType of business:\nBirds I am looking for:\nQuantity:\nMy location:",
+    "bird": "Hello Uddhava Agri Farms, I am interested in bird {id}{breed}. Seen on: bird profile {id}. Could you share more details?",
+    "breedPart": " ({breed})",
+    "variety": "Hello Uddhava Agri Farms, I would like to know about your {breed} birds. Seen on: {breed} variety page.",
+    "form": "Hello Uddhava Agri Farms, this is an enquiry from your website.",
+    "formName": "Name", "formLocation": "Location", "formType": "Buyer type", "formInterest": "Interested in", "formQty": "Quantity", "formMessage": "Message"
+  },
+  "home": {
+    "where": "Native poultry farm in Lingapalem, Andhra Pradesh",
+    "h1a": "Rooted in Tradition.", "h1b": "Raised with Care.",
+    "sub": "Native roosters and hens, raised on our farm. Every listed bird has its own ID, photos and video.",
+    "factBirds": "birds on our farm", "factTypes": "Roosters & hens", "factTypesSub": "multiple varieties", "factPlace": "Lingapalem", "factPlaceSub": "Andhra Pradesh",
+    "cardLabel": "Life on the farm",
+    "exploreTitle": "Explore our birds", "exploreLede": "Two main types, each with its own page.",
+    "varietiesTitle": "Discover our varieties", "varietiesLede": "Sample varieties for the design only. The farm's confirmed list will replace them.",
+    "looksTitle": "Explore by appearance", "looksLede": "Browse birds by feather colour and pattern.", "looksNote": "Feather colour describes how a bird looks. It is not a breed classification.",
+    "birdsTitle": "Available now", "birdsLede": "See the actual bird, know its details, and speak directly with the farm.",
+    "trust1": "Its own ID", "trust1Body": "Every enquiry is about one specific bird.",
+    "trust2": "Real photos and video", "trust2Body": "The actual bird, never a stock or generated picture.",
+    "trust3": "Direct to the farm", "trust3Body": "WhatsApp opens with the bird's ID filled in.",
+    "farmTitle": "Raised on our farm in Lingapalem", "farmBody": "More than 500 roosters and hens, across multiple native varieties, raised and cared for here.",
+    "galleryTitle": "Life on the farm", "galleryLede": "Photographs and short clips from around the farm.",
+    "bizTitle": "Buying for your farm or business?", "bizBody": "Tell us what you're looking for and we'll take it from there on WhatsApp.",
+    "bizTypes": ["Poultry breeders", "Farm owners", "Resellers", "Bulk buyers"],
+    "faqTitle": "Questions before you enquire", "faqBody": "Can't find your answer? Ask us directly.",
+    "closeTitle": "Seen a bird you like?", "closeBody": "Message us with its ID and we'll take it from there."
+  },
+  "breeds": {
+    "title": "Our breeds", "lede": "Get to know the native varieties raised on our farm, then see the birds of each variety listed for enquiry.",
+    "notice": "The varieties shown are samples for the design. The farm's confirmed list will replace them, and no characteristics are stated until the farm confirms them.",
+    "step1": "Learn about a variety", "step1Body": "Photos and details the farm has confirmed.",
+    "step2": "See its birds", "step2Body": "Each variety links to its listed birds.",
+    "step3": "Enquire on WhatsApp", "step3Body": "Ask about the variety or a specific bird.",
+    "searchLabel": "Search varieties", "searchPh": "Search by name", "colourLabel": "With birds listed in",
+    "count": "{n} varieties", "none": "No varieties match your search.", "clear": "Clear",
+    "listed": "{n} birds listed", "noneListed": "No birds listed yet", "recent": "Recently listed birds", "byType": "Browse by type"
+  },
+  "breed": {
+    "about": "About this variety", "aboutPending": "The farm will add an introduction to this variety.",
+    "chars": "Confirmed characteristics", "charsPending": "No characteristics confirmed yet. We only publish details the farm has verified.",
+    "glance": "On our farm", "glanceListed": "Birds listed", "glanceColours": "Feather colours listed", "glanceTypes": "Types listed",
+    "photos": "Photos", "related": "{name} birds listed", "relatedNone": "No birds of this variety are listed right now.",
+    "others": "Other varieties", "enquireTitle": "Interested in {name}?", "enquireBody": "Ask us on WhatsApp about this variety and when birds are available.",
+    "notFound": "We couldn't find that variety."
+  },
+  "birds": {
+    "allTitle": "Available birds", "allLede": "Every bird listed for enquiry, each with its own ID and profile.",
+    "roostersTitle": "Roosters", "roostersLede": "Kodi Punjulu. Browse the roosters listed for enquiry.",
+    "hensTitle": "Hens", "hensLede": "Kodi Pettalu. Browse the hens listed for enquiry.",
+    "notice": "These are demonstration listings for testing the design. They are not real birds for sale.",
+    "searchLabel": "Search birds", "searchPh": "Search by ID, variety or colour",
+    "filters": "Filters", "type": "Bird type", "variety": "Variety", "colour": "Feather colour", "age": "Age", "availability": "Availability",
+    "ageU6": "Under 6 months", "age6to12": "6 to 12 months", "age12to24": "12 to 24 months", "ageO24": "Over 24 months",
+    "sort": "Sort by", "sortNewest": "Recently listed", "sortAgeAsc": "Youngest first", "sortAgeDesc": "Oldest first",
+    "sortWeightDesc": "Heaviest first", "sortWeightAsc": "Lightest first", "sortId": "Bird ID",
+    "results": "{n} birds", "resultsOne": "1 bird", "clearAll": "Clear all", "showResults": "Show {n} birds",
+    "emptyTitle": "No birds match these filters", "emptyBody": "Try removing a filter, or ask us on WhatsApp about birds that aren't listed yet."
+  },
+  "bird": {
+    "title": "Bird {id}", "notice": "Demonstration record. This is not a real bird for sale. Real listings will show the farm's own photos and confirmed details.",
+    "id": "Bird ID", "variety": "Variety", "type": "Bird type", "age": "Age", "weight": "Weight", "colour": "Feather colour",
+    "status": "Availability", "location": "Location", "breeding": "Breeding history", "health": "Health information",
+    "pendingInfo": "Not provided yet. Ask the farm on WhatsApp.", "details": "Details", "listed": "Listed on {date}",
+    "enquireTitle": "Interested in this bird?", "enquireBody": "Your WhatsApp message will include this bird's ID.",
+    "related": "More birds you may like", "notFound": "We couldn't find a bird with that ID.", "demoValues": "Demo values"
+  },
+  "farm": {
+    "title": "Our farm in Lingapalem", "lede": "Where our roosters and hens are raised, cared for and photographed.",
+    "imagesNote": "Images on this page are concept placeholders until photographs of the farm are added.",
+    "introTitle": "A working native poultry farm", "introBody": "Uddhava Agri Farms keeps more than 500 roosters and hens across multiple native varieties at our farm in Lingapalem, Andhra Pradesh.",
+    "scaleBirds": "birds on the farm", "scaleTypes": "main types: roosters and hens", "scaleVarieties": "Multiple", "scaleVarietiesSub": "native varieties", "scalePlace": "Lingapalem", "scalePlaceSub": "Andhra Pradesh",
+    "storyTitle": "The farm in pictures", "story1": "The place", "story2": "The birds", "story3": "The care",
+    "storyPending": "The farm's own description will appear here.",
+    "dayTitle": "A day on the farm", "dayPending": "The farm will describe its actual daily routine here. Until then, only the scenes are shown.",
+    "dayMorning": "Morning", "dayMorningCap": "Birds out in the early light", "dayDay": "Daytime", "dayDayCap": "Foraging in the open yard", "dayEvening": "Evening", "dayEveningCap": "Settling under the shelter",
+    "videosTitle": "Farm videos", "videosLede": "Short clips from the farm will be added here.",
+    "ctaTitle": "Want to know more about the farm?", "ctaBody": "Ask us anything on WhatsApp."
+  },
+  "about": {
+    "title": "About Uddhava Agri Farms", "lede": "A native poultry breeding farm building a brand you can trust.",
+    "identityTitle": "Rooted in Tradition. Raised with Care.",
+    "identityBody": "Our name and our promise stand for two things: respect for traditional native poultry, and care for every bird we raise and every person who enquires.",
+    "storyTitle": "Our story", "storyPending": "The farm's story, in the owner's own words, will appear here.",
+    "valuesTitle": "What we stand for",
+    "v1": "Honesty in every listing", "v1Body": "Real photos, real IDs, and only details we have confirmed.",
+    "v2": "Care for every bird", "v2Body": "Birds raised with attention, every day.",
+    "v3": "Respect for tradition", "v3Body": "Native varieties that are part of rural life in our region.",
+    "v4": "Direct relationships", "v4Body": "You speak with the farm itself, not an agent.",
+    "heritageTitle": "Agricultural heritage", "heritageBody": "Native poultry has long been part of village life across Andhra Pradesh and Telangana. We want to present it with the professionalism it deserves.",
+    "peopleTitle": "The people behind the farm", "peoplePending": "Introductions to the people who run the farm will be added here.",
+    "visionTitle": "Our vision", "visionBody": "To become a recognised, trusted name for native poultry, where every buyer can see exactly what they are enquiring about."
+  },
+  "gallery": {
+    "title": "Gallery", "lede": "Photographs and videos of birds and daily life on the farm.",
+    "notice": "Images are concept placeholders until the farm's own photographs are added. Video slots will show real footage once it is supplied.",
+    "reelsTitle": "Reels", "photosTitle": "Photos and videos",
+    "fAll": "All", "fRoosters": "Roosters", "fHens": "Hens", "fFarm": "Farm", "fVideos": "Videos", "count": "{n} items"
+  },
+  "contact": {
+    "title": "Contact us", "lede": "WhatsApp is the quickest way to reach the farm.",
+    "waTitle": "WhatsApp", "waBody": "Chat with the farm directly.",
+    "locTitle": "Farm location", "locBody": "Lingapalem, Andhra Pradesh", "locPending": "Full address to be added.",
+    "phoneTitle": "Business phone", "phonePending": "To be confirmed.",
+    "formTitle": "Send an enquiry", "formBody": "This form writes a WhatsApp message for you. Nothing is sent until you press send in WhatsApp.",
+    "buyerType": "I am", "individual": "An individual buyer", "business": "A business buyer",
+    "name": "Your name", "location": "Your town or city", "interest": "Interested in", "interestPh": "A bird ID, a variety, roosters or hens",
+    "qty": "Quantity", "qtyHint": "Approximate number of birds", "message": "Message", "optional": "optional",
+    "submit": "Send via WhatsApp",
+    "errName": "Please enter your name.", "errLocation": "Please enter your town or city.", "errInterest": "Please tell us what you're interested in.", "errQty": "Please enter a quantity of 1 or more.",
+    "opened": "WhatsApp has opened with your message. It is only sent when you press send there.",
+    "bizTitle": "Business enquiries", "bizBody": "Breeders, farm owners, resellers and bulk buyers are welcome. Choose \"A business buyer\" in the form, or use the business template.",
+    "faqTitle": "Before you enquire"
+  },
+  "faq": {
+    "title": "Frequently asked questions", "lede": "Answers to common questions. Anything marked pending will be confirmed by the farm before launch.",
+    "searchLabel": "Search questions", "searchPh": "Search questions", "none": "No questions match your search.",
+    "pendingAnswer": "The farm will confirm this before launch. For now, please ask on WhatsApp.",
+    "ctaTitle": "Still have a question?", "ctaBody": "Ask the farm directly on WhatsApp.",
+    "cat": { "enquiries": "Bird enquiries", "availability": "Availability", "location": "Farm location", "breeding": "Breeding information", "business": "Business enquiries", "visits": "Farm visits", "delivery": "Delivery" },
+    "q": {
+      "how": { "q": "How do I enquire about a bird?", "a": "Open the bird's profile and tap \"Enquire on WhatsApp\". Your message will include the bird's ID, so we know exactly which bird you mean." },
+      "prices": { "q": "Are prices shown on the website?", "a": "No, prices aren't listed online. Send us the bird's ID on WhatsApp and we'll share the details." },
+      "channel": { "q": "What is the best way to contact the farm?", "a": "WhatsApp on +91 93912 29691 is the quickest way to reach us." },
+      "status": { "q": "What do Available and Reserved mean?", "a": "Available birds are open for enquiry. Reserved birds are already being discussed with a buyer." },
+      "reserve": { "q": "Can I reserve a bird?", "a": "" },
+      "where": { "q": "Where is the farm?", "a": "Our farm is in Lingapalem, Andhra Pradesh." },
+      "areas": { "q": "Which areas do you serve?", "a": "" },
+      "breedingInfo": { "q": "Do birds come with breeding information?", "a": "Where the farm has breeding information for a bird, it is shown on that bird's profile. If a field is empty, ask us on WhatsApp." },
+      "health": { "q": "Is health information available?", "a": "Health information appears on a bird's profile only when the farm has provided it. If you have questions, ask on WhatsApp." },
+      "bulk": { "q": "Do you sell to breeders and businesses?", "a": "Yes. We welcome enquiries from poultry breeders, farm owners, resellers and bulk buyers." },
+      "bizHow": { "q": "How do I make a business enquiry?", "a": "Use the business enquiry option on the Contact page, or the \"Discuss a business enquiry\" button. It opens WhatsApp with a short template for type of business, birds, quantity and location." },
+      "visit": { "q": "Can I visit the farm?", "a": "" },
+      "delivery": { "q": "Do you deliver birds?", "a": "" },
+      "transport": { "q": "How are birds transported?", "a": "" }
+    }
+  },
+  "privacy": {
+    "title": "Privacy policy", "draft": "Draft for review. This policy must be checked and approved before the website launches.",
+    "s1": "Information we collect", "s1Body": "This website does not have accounts and does not store enquiry forms on a server. When you use a WhatsApp button or the enquiry form, WhatsApp opens with a message you can review; nothing is sent until you press send.",
+    "s2": "WhatsApp", "s2Body": "Messages you send us on WhatsApp are handled by WhatsApp under its own privacy policy. We use them only to respond to your enquiry.",
+    "s3": "Preferences stored on your device", "s3Body": "Your language choice is saved in your browser so the site stays in your language. You can clear it at any time through your browser settings.",
+    "s4": "Analytics and cookies", "s4Body": "The website does not use analytics or advertising cookies at present. This section will be updated if that changes.",
+    "s5": "Contact", "s5Body": "For privacy questions, contact the farm on WhatsApp at +91 93912 29691."
+  },
+  "notFound": { "title": "Page not found", "body": "The page you were looking for doesn't exist or has moved.", "help": "Try one of these instead:" },
+  "footer": { "birds": "Birds", "farm": "The farm", "contact": "Contact", "rights": "© {year} Uddhava Agri Farms" },
+  "proto": {
+    "tools": "Prototype tools", "logo": "Logo", "editMedia": "Edit media", "on": "On", "off": "Off", "export": "Export media",
+    "count": "Concept media {n}/{total}", "router": "Preview addresses use #/. The live site will use normal URLs such as uddhavaagrifarms.in/birds.",
+    "addImage": "Add image", "addPoster": "Add poster", "addVideo": "Add video", "prompt": "Prompt", "replace": "Replace", "remove": "Remove",
+    "gateTitle": "Check this before placing it", "gateNote": "If any point fails, generate again. An obviously synthetic image harms trust more than a clearly marked placeholder.",
+    "gate": ["Anatomy is correct: two legs, four toes each, one comb, natural beak, wattles and eye", "Feathers look real: natural texture and small imperfections, not smooth or plastic", "Shadows are natural and match one light direction; birds are grounded", "Setting looks like a real Indian farm; no cages or western barns", "Colour and light are calm and true to life", "Posture is calm, with nothing aggressive", "No AI artefacts: warped objects, merged birds, garbled text or melted edges"],
+    "place": "Place as placeholder", "cancel": "Cancel", "copy": "Copy prompt", "copied": "Prompt copied", "file": "Production file",
+    "placedImg": "Placed as a labelled placeholder image", "placedVid": "Placed as a labelled concept video",
+    "noMedia": "No media placed yet.", "exportDone": "Export ready: {n} files", "exportNA": "Export is not available in this view.", "exportFail": "Export could not be completed.",
+    "tooBig": "That video is over 60 MB. Please use a shorter or compressed clip."
+  }
+}

@@ -1,0 +1,5 @@
+.wrap{display:grid;gap:32px;align-items:center}
+.ctas{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.media{aspect-ratio:4/3;border-radius:var(--r-xl)}
+@media (min-width:560px){.ctas{flex-direction:row;flex-wrap:wrap}}
+@media (min-width:768px){.wrap{grid-template-columns:1fr 1fr;gap:56px}}

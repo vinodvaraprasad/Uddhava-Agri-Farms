@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output (Vercel builds from source)
+dist/
+dist-preview/
+
+# Local environment overrides (the committed .env.production and .env.preview contain no secrets)
+.env.local
+.env.*.local
+
+# Logs and OS/editor files
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.vercel

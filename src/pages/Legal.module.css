@@ -1,0 +1,19 @@
+.body{padding:0 0 88px}
+.layout{display:grid;gap:28px;align-items:start}
+.toc ol{margin:0;padding:0 0 0 20px;display:grid;gap:8px;color:var(--text2)}
+.toc button{background:none;border:0;padding:0;cursor:pointer;color:var(--sage);text-align:left;font-size:15px;text-decoration:underline;text-underline-offset:4px}
+.draft{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 16px;border-radius:var(--r-md);background:var(--sand);margin:0 0 20px;font-size:14.5px}
+.sec{padding:24px 0;border-bottom:1px solid var(--line);max-width:68ch}
+.sec p{color:var(--text2);margin:10px 0 0}
+.nf{padding:72px 0 104px;text-align:center}
+.nf :global(.lede){margin-inline:auto}
+.nfMark{width:96px;height:96px;margin:0 auto 12px;color:var(--forest);--accent:var(--forest);--knock:var(--ivory);animation:nod 3s var(--ease) infinite}
+@keyframes nod{0%,70%,100%{transform:none}80%{transform:rotate(-6deg)}90%{transform:rotate(3deg)}}
+.code{font:600 14px/1 var(--font-body);letter-spacing:.3em;color:var(--clay);margin:0 0 10px}
+.nfBtn{margin-top:28px}
+.help{margin:40px 0 12px;color:var(--text2);font-size:14px}
+.links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.links a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--forest);font-weight:600;font-size:14.5px;transition:background .2s}
+.links a:hover{background:var(--sand)}
+.links svg{width:14px;height:14px}
+@media (min-width:1024px){.layout{grid-template-columns:260px 1fr;gap:64px}.toc{position:sticky;top:calc(var(--header-h) + 24px)}}

@@ -1,0 +1,11 @@
+.acc{border-top:1px solid #CFC7B7}
+.item{border-bottom:1px solid #CFC7B7}
+.h{margin:0}
+.q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:0;padding:20px 0;cursor:pointer;font:600 17px/1.45 var(--font-body);color:var(--charcoal)}
+.q:hover{color:var(--forest)}
+.icon{width:22px;height:22px;flex:none;color:var(--sage);transition:transform .35s var(--ease-out)}
+.q[aria-expanded="true"] .icon{transform:rotate(45deg)}
+.a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease-out)}
+.a > div{overflow:hidden}
+.open{grid-template-rows:1fr}
+.body{padding:0 0 20px;color:var(--text2);max-width:64ch}

@@ -1,0 +1,70 @@
+.wrap{display:grid;gap:22px}
+.toolbar{display:flex;flex-direction:column;gap:12px}
+.search{position:relative;display:flex;align-items:center;flex:1}
+.search svg{position:absolute;left:16px;width:20px;height:20px;color:var(--muted);pointer-events:none}
+.search input{width:100%;height:50px;padding:0 16px 0 46px;border:1.5px solid var(--muted);border-radius:var(--r-md);background:#fff;font-size:15.5px;transition:border-color .2s,box-shadow .2s}
+.search input:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(80,107,91,.18)}
+.tools{display:flex;gap:10px}
+.filterBtn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:50px;padding:0 16px;border:1.5px solid var(--forest);border-radius:var(--r-md);background:transparent;color:var(--forest);font-weight:600;cursor:pointer;flex:1}
+.filterBtn svg{width:18px;height:18px}
+.badge{min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--forest);color:var(--ivory);font-size:12px;display:grid;place-items:center}
+.sort{position:relative;display:flex;align-items:center;flex:1}
+.sort span{position:absolute;left:14px;top:7px;font-size:11px;color:var(--text2);pointer-events:none}
+.sort select{width:100%;height:50px;padding:14px 36px 0 14px;border:1.5px solid var(--muted);border-radius:var(--r-md);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%233E5447' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 12px center/16px;-webkit-appearance:none;appearance:none;font-size:14.5px;font-weight:600;color:var(--charcoal);cursor:pointer}
+.sort select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(80,107,91,.18)}
+.layout{display:grid;gap:28px}
+.aside{display:none}
+.asideHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.asideTitle{font:600 1.2rem/1.3 var(--font-head);color:var(--forest);margin:0}
+.groups{display:grid;gap:4px}
+.group{border:0;border-top:1px solid var(--line);padding:16px 0 10px;margin:0}
+.legend{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;padding:0;margin-bottom:10px}
+.options{display:grid;gap:4px}
+.opt{display:grid;grid-template-columns:22px 1fr auto;align-items:center;gap:10px;min-height:42px;padding:0 10px;border:0;border-radius:var(--r-md);background:transparent;cursor:pointer;text-align:left;font-size:14.5px;transition:background .2s}
+.opt:hover:not(:disabled){background:var(--sand)}
+.opt:disabled{opacity:.4;cursor:not-allowed}
+.box{width:20px;height:20px;border:1.5px solid var(--muted);border-radius:5px;display:grid;place-items:center;transition:background .2s,border-color .2s}
+.box svg{width:14px;height:14px}
+.on .box{background:var(--forest);border-color:var(--forest);color:var(--ivory)}
+.on{font-weight:600;color:var(--forest)}
+.n{font-size:12.5px;color:var(--text2);font-variant-numeric:tabular-nums}
+.status{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:18px;min-height:36px}
+.status strong{font-size:15px;margin-right:6px}
+.activeChip{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 10px 0 14px;border-radius:999px;border:1px solid var(--line);background:var(--sand);cursor:pointer;font-size:13.5px;font-weight:500;animation:chipIn .3s var(--ease-out)}
+.activeChip svg{width:14px;height:14px}
+.activeChip:hover{border-color:var(--forest)}
+@keyframes chipIn{from{opacity:0;transform:scale(.9)}}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+.empty{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:56px 20px;border:1.5px dashed var(--line);border-radius:var(--r-xl);background:var(--ivory)}
+.empty > svg{width:36px;height:36px;color:var(--clay)}
+.empty p{color:var(--text2);max-width:46ch;margin:0}
+.emptyActions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:10px}
+.clearBtn{height:42px;padding:0 16px;border-radius:var(--r-md);border:1.5px solid var(--forest);background:transparent;color:var(--forest);font-weight:600;cursor:pointer}
+/* Mobile / tablet filter sheet */
+.sheetWrap{position:fixed;inset:0;z-index:90;visibility:hidden;transition:visibility 0s .4s}
+.sheetOpen{visibility:visible;transition:visibility 0s}
+.scrim{position:absolute;inset:0;background:rgba(47,53,47,.42);opacity:0;transition:opacity .3s}
+.sheetOpen .scrim{opacity:1}
+.sheet{position:absolute;left:0;right:0;bottom:0;max-height:88vh;display:flex;flex-direction:column;background:var(--ivory);border-radius:20px 20px 0 0;transform:translateY(100%);transition:transform .45s var(--ease-out);outline:none}
+.sheetOpen .sheet{transform:none}
+.sheetHead{display:flex;justify-content:space-between;align-items:center;padding:14px var(--gutter);border-bottom:1px solid var(--line)}
+.close{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:transparent;display:grid;place-items:center;cursor:pointer}
+.close svg{width:20px;height:20px}
+.sheetBody{overflow-y:auto;padding:0 var(--gutter);overscroll-behavior:contain}
+.sheetFoot{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:14px var(--gutter) calc(14px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--ivory)}
+.showBtn{height:48px;border:0;border-radius:var(--r-md);background:var(--sage);color:var(--ivory);font-weight:600;cursor:pointer}
+@media (min-width:560px){.grid{grid-template-columns:1fr 1fr}}
+@media (min-width:768px){
+  .toolbar{flex-direction:row;align-items:center}
+  .tools{flex:none}
+  .filterBtn,.sort{flex:none}
+  .sort select{width:220px}
+  .sheet{left:auto;top:0;width:400px;max-height:none;border-radius:0;transform:translateX(100%)}
+}
+@media (min-width:1024px){
+  .filterBtn{display:none}
+  .layout{grid-template-columns:260px 1fr;gap:40px;align-items:start}
+  .aside{display:block;position:sticky;top:calc(var(--header-h) + 20px);max-height:calc(100vh - var(--header-h) - 40px);overflow-y:auto;padding-right:6px}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .sheetWrap{display:none}
+}
