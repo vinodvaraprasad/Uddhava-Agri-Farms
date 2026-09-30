@@ -9,6 +9,7 @@ import { ConceptMedia } from '../components/Media.jsx';
 import s from './Birds.module.css';
 
 // One page template for /birds, /birds/roosters and /birds/hens.
+// These are the sale pages: concept images never appear here, so the strip and closing image stay placeholders.
 const VARIANTS = {
   all: { type: null, title: 'birds.allTitle', lede: 'birds.allLede', media: ['catRooster', 'catHen2', 'catRooster2'] },
   rooster: { type: 'rooster', title: 'birds.roostersTitle', lede: 'birds.roostersLede', media: ['catRooster', 'catRooster2'] },
@@ -25,7 +26,7 @@ export default function Birds({ variant = 'all' }) {
     <>
       <PageHero crumbs={crumbs} title={t(v.title)} lede={t(v.lede)}>
         <div className={s.strip} aria-hidden="true">
-          {v.media.map((m, i) => <ConceptMedia key={m} id={m} tone={['dark', 'sand', 'mist'][i]} className={s.stripImg} />)}
+          {v.media.map((m, i) => <ConceptMedia key={m} id={m} tone={['dark', 'sand', 'mist'][i]} className={s.stripImg} placeholderOnly />)}
         </div>
       </PageHero>
       <section className={s.body}>
@@ -39,7 +40,7 @@ export default function Birds({ variant = 'all' }) {
           <BirdListing key={variant} presetType={v.type} />
         </div>
       </section>
-      <EnquiryCTA title={t('home.closeTitle')} body={t('home.closeBody')} media={variant === 'hen' ? 'closePortrait' : 'galleryFeed'} />
+      <EnquiryCTA title={t('home.closeTitle')} body={t('home.closeBody')} media={variant === 'hen' ? 'closePortrait' : 'galleryFeed'} placeholderOnly />
     </>
   );
 }

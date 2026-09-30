@@ -9,11 +9,13 @@ import s from './Media.module.css';
 const cx = (...a) => a.filter(Boolean).join(' ');
 
 // Class A: brand concept visual. Always marked as a placeholder until real farm media replaces it.
-export function ConceptMedia({ id, tone = 'sage', className, hoverPlay = false, children, round = false, badge }) {
+// placeholderOnly: always show the empty placeholder here, even when the slot has media (used on the sale pages).
+export function ConceptMedia({ id, tone = 'sage', className, hoverPlay = false, children, round = false, badge, placeholderOnly = false }) {
   const m = MEDIA[id];
-  const { items, edit, pick, remove, openPrompt } = useMedia();
+  const { items, edit: editing, pick, remove, openPrompt } = useMedia();
+  const edit = editing && !placeholderOnly;
   const { t } = useI18n();
-  const it = items[id] || {};
+  const it = (!placeholderOnly && items[id]) || {};
   const [ref, inView] = useInView({ threshold: 0.25 });
   const vref = useRef(null);
   const isVideo = m?.kind === 'video';
